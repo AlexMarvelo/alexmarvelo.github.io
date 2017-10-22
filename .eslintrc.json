@@ -1,0 +1,26 @@
+{
+	"extends": "airbnb",
+	"rules": {
+		"indent": [2, "tab"],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+		"no-tabs": 0,
+		"import/no-extraneous-dependencies": 0,
+		"react/jsx-filename-extension": 0,
+		"jsx-a11y/anchor-is-valid": 0
+	},
+	"settings": {
+		"import/resolver": {
+			"webpack": {
+				"paths": ["src", "node_modules"]
+			},
+			"node": {
+				"paths": ["src", "node_modules"]
+			}
+		},
+		"react": {
+			"version": "15.6"
+		},
+		"import/extensions": [".js", ".jsx", ".scss"]
+	}
+}
