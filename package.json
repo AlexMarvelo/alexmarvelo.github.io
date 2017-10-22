@@ -1,0 +1,24 @@
+{
+  "name": "my-personal-site",
+  "version": "0.1.0",
+  "description": "Project of my personal web site",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/",
+    "build:pug": "node build/build-templates.js"
+  },
+  "author": "Alexey <mironenkoalexey@gmail.com>",
+  "repository": "git@bitbucket.org:AlexMarvelo/my-personal-site.git",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "eslint": "^3.17.0",
+    "less": "^2.7.2",
+    "pug": "^2.0.0-beta11",
+    "pug-lint": "^2.4.0",
+    "pug-lint-config-clock": "^2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^1.11.3"
+  }
+}

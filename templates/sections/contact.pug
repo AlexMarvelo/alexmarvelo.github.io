@@ -1,0 +1,94 @@
+#contact-me-section.section.section-item.combine-section.hide-overlay.overflow.wow
+	.overlay-color.relative.bg-image-3-revert
+		#contact.inner-container.contact-us
+			.container
+				.row
+					//- Start: Section Heading
+					.section-header.col-sm-10.col-sm-offset-1
+						.overflow
+							.line-outer
+								.line.wow
+						.overflow
+							.section-heading-outer.m-b-15
+								p.sub-heading.wow CONTACT ME
+					//- End: Section Heading
+					.clearfix
+					.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.overflow
+						.row.single-form-outer.wow
+							form#contact-form.dark-background.single-form(method='post', action='php/sendmail.php', autocomplete='off')
+								.message.col-xs-12
+									p.email-loading
+										img(src='images/loading.gif', alt='')
+										|    Sending...
+									p.email-success
+										i.icon.icon-icon-check-alt2
+										|  Your message has successfully been sent.
+									p.email-failed
+										i.icon.icon-icon-close-alt2
+										|  Something went wrong!
+								.col-sm-6.col-xs-12
+									.input-outer
+										.group.relative
+											input#contact-name.contact-name.form-control(name='name', type='text', required='')
+											label.input-label(for='contact-name')
+												span.label-text YOUR NAME
+								.col-sm-6.col-xs-12
+									.input-outer
+										.group.relative
+											input#contact-email.contact-email.form-control(name='name', type='email', required='')
+											label.input-label(for='contact-email')
+												span.label-text YOUR EMAIL
+								.col-sm-6.col-xs-12
+									.input-outer
+										.group.relative
+											input#contact-company.contact-company.form-control(name='name', type='text')
+											label.input-label(for='contact-company')
+												span.label-text COMPANY
+								.col-sm-6.col-xs-12
+									.input-outer
+										.group.relative
+											input#contact-subject.contact-subject.form-control(name='name', type='text')
+											label.input-label(for='contact-subject')
+												span.label-text SUBJECT
+								.col-xs-12
+									.input-outer
+										.group.relative
+											textarea#contact-message.contact-message.form-control(rows='3', required='')
+											label.input-label(for='contact-message')
+												span.label-text YOUR MESSAGE
+								//- Subject Button
+								.btn-form.text-center.col-xs-12
+									.button-outer.relative
+										button.btn.btn-fill.right-icon
+											| SEND
+											i.icon.icon-arrow-right
+						//- /#testimonials-1
+					//- End: .col-xs-12
+					.clearfix
+					.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.contact-footer
+						.row
+							.other-link.col-xs-12
+								.row
+									.each-section.col-sm-4.col-sm-offset-4.col-xs-12
+										.each-section-inner.text-center
+											.overflow
+												p.title.wow My Contacts
+											ul.nav
+												li.overflow
+													.li-inner.wow
+														a.btn-mask(href='mailto:mironenkoalexey@gmail.com') mironenkoalexey@gmail.com
+												li.overflow
+													.li-inner.wow
+														ul.nav.social-icon
+															li
+																a(href='https://-www.facebook.com/alx.mironenko', target='_blank')
+																	i.icon.icon-social-facebook
+															li
+																a.icon.icon-social-linkedin(href='https://-www.linkedin.com/in/alekseymironenko', target='_blank', <i='')
+									//- End: .each-section
+							//- End: .other-link
+						//- End: .row
+					//- End: .contact-footer
+				//- End: .row
+			//- End: .container
+		//- End: .inner-container

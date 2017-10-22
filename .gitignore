@@ -1,6 +1,16 @@
 _site
 .sass-cache
 .jekyll-metadata
+
 node_modules
 .cache
 public
+
+.DS_Store
+node_modules/
+drafts/
+prepros.cfg
+index.html
+css/*.css
+npm-debug.log
+js/*.bundle.js

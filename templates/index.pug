@@ -1,0 +1,40 @@
+doctype html
+head(lang="en")
+	<!--[if IE 7]>
+	<html class="no-js ie7 oldie" lang="en-US">
+	<![endif]-->
+	<!--[if IE 8]>
+	<html class="no-js ie8 oldie" lang="en-US">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+
+	title Aleksey Mironenko
+	meta(charset='utf-8')
+	meta(name='description', content='Aleksey Mironenko personal site')
+	meta(name='keywords', content='portfolio, personal, work, developer, front-end')
+	meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+	meta(name='robots', content='noindex')
+
+	link(rel='icon', href='images/favicon.ico')
+	link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
+	link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+	link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+
+	link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900', rel='stylesheet', type='text/css')
+	//- font-family: 'Merriweather', serif;
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+	//- font-family: 'Open Sans', sans-serif;
+
+	link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+	//- FONT ICONS
+	link(rel='stylesheet', href='icons/rik-icons/styles.css')
+	//- COUSTOM CSS link
+	link(rel='stylesheet', href='css/style.css')
+
+	<!--[if lt IE 9]>
+	<script src="js/plagin-js/html5shiv.js"></script>
+	<script src="js/plagin-js/respond.min.js"></script>
+	<![endif]-->
+body
+	include layout.pug
+	script(src='js/app.bundle.js')

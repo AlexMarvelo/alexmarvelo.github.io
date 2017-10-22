@@ -1,0 +1,21 @@
+nav#main-navbar-top.navbar.navbar-fixed-top.main-navbar-top.navbar-top-js
+	.container.relative
+		.navbar-header
+			//- Menu Button show Mobile view
+			button.nav-trigger.nav-trigger-animate(type='button', data-target='#js-navbar-menu')
+				span.icon(aria-hidden='true')
+			//- TEMPLATE LOGO LIGHT
+			a.navbar-brand.light-logo.btn-scroll(href='#home-section')
+				img.img-responsive(src='images/logo.png', alt='')
+		//- Main Menu List
+		#js-navbar-menu.navbar-collapse
+			ul#navbar-nav.nav.navbar-nav.navbar-right
+				li
+					a.btn-nav(href='#contact-me-section') Contact Me
+		//- Right Side Navigation Button
+		.navbar-collapse-right.hidden-xs
+			ul.nav.navbar-nav.navbar-right.btn-scroll
+				li
+					a.btn-nav(href='#contact-me-section')
+						| Get in Touch
+						i.icon.icon-arrow-right
