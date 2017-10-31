@@ -14,7 +14,7 @@ const IndexLayout = ({ children }) => (
 				{ name: 'keywords', content: 'sample, something' },
 			]}
 		/>
-		<div className="container">
+		<div>
 			{children()}
 		</div>
 	</div>

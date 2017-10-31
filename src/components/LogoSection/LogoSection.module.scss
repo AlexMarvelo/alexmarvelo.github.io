@@ -1,0 +1,19 @@
+@import '../../styles/imports';
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.logo {
+	width: 7rem;
+}
+
+.title {
+	margin-top: 2.35rem;
+	font-family: $brandon-grotesque-font;
+	font-weight: 300;
+}
