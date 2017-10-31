@@ -4,23 +4,23 @@
 	&.darkBg {
 		background-color: $dark-blue;
 		color: $white;
-		
+
 		.arrow {
 			background-color: $dark-blue;
 			color: $white;
 		}
 	}
-	
+
 	&.whiteBg {
 		background-color: $white;
 		color: $black;
 	}
-	
+
 	&.lightBg {
 		background-color: $light;
 		color: $black;
 	}
-	
+
 	&.turquoiseBg {
 		background-color: $turquoise;
 		color: $white;
@@ -39,8 +39,8 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	
-	&:before {
+
+	&::before {
 		font-size: 2rem;
 		margin-top: 1rem;
 	}
