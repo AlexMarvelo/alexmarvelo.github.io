@@ -8,7 +8,7 @@ import '../styles/global.scss';
 const IndexLayout = ({ children }) => (
 	<div>
 		<Helmet
-			title="Gatsby Default Starter"
+			title="Aleksey Mironenko | Personal site"
 			meta={[
 				{ name: 'description', content: 'Sample' },
 				{ name: 'keywords', content: 'sample, something' },

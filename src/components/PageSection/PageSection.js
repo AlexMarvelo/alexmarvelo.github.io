@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { PageSectionStyles } from './common';
+import { PageSectionStyles } from 'constants/display';
+import SectionArrow from 'components/SectionArrow';
 import styles from './PageSection.module.scss';
 
 
@@ -26,7 +27,7 @@ class PageSection extends Component {
 		const { children, background, showArrow } = this.props;
 		const { winHeight } = this.state;
 		return (
-			<div
+			<section
 				className={classNames(styles.pageSection, {
 					[styles.darkBg]: background === PageSectionStyles.DARK,
 					[styles.lightBg]: background === PageSectionStyles.LIGHT,
@@ -39,9 +40,9 @@ class PageSection extends Component {
 			>
 				{children}
 				{showArrow && (
-					<span className={classNames('icon-arrow-bottom', styles.arrow)} />
+					<SectionArrow background={background} />
 				)}
-			</div>
+			</section>
 		);
 	}
 }

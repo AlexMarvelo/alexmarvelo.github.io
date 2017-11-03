@@ -1,47 +1,41 @@
 @import '../../styles/imports';
 
 .pageSection {
+	min-height: 400px;
+
 	&.darkBg {
 		background-color: $dark-blue;
 		color: $white;
 
-		.arrow {
-			background-color: $dark-blue;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
 			color: $white;
 		}
 	}
 
 	&.whiteBg {
 		background-color: $white;
-		color: $black;
 	}
 
 	&.lightBg {
 		background-color: $light;
-		color: $black;
 	}
 
 	&.turquoiseBg {
 		background-color: $turquoise;
 		color: $white;
-	}
-}
 
-.arrow {
-	position: relative;
-	bottom: 0;
-	left: 50%;
-	border-radius: 50%;
-	width: 4.53rem;
-	height: 4.53rem;
-	transform: translate(-50%, -50%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-
-	&::before {
-		font-size: 2rem;
-		margin-top: 1rem;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
 	}
 }

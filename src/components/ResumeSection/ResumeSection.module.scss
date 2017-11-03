@@ -1,0 +1,16 @@
+@import '../../styles/imports';
+
+.section {
+	background-color: $light;
+	margin-bottom: -6rem;
+	overflow: hidden;
+}
+
+.collapsedSection {
+	height: 0;
+	margin-bottom: 0;
+}
+
+.doc {
+	padding-bottom: 10rem;
+}

@@ -1,0 +1,19 @@
+@import '../../styles/imports';
+
+.textCol {
+	position: relative;
+	padding-top: 4rem;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -4rem;
+		left: 1.5rem;
+		width: 6rem;
+		border-bottom: .1rem solid $light-gray;
+	}
+
+	@include mediaXS {
+		padding-top: 0;
+	}
+}

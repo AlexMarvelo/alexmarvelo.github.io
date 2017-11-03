@@ -1,8 +1,142 @@
 @import 'imports';
 
-html,
+html {
+	font-size: 62.5%;
+	background: $white;
+}
+
 body {
-	font-size: 17px;
 	font-family: $minion-pro-font;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: $light-gray;
+	overflow: auto;
+
+	@include mediaS {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+	@include mediaM {
+		font-size: 17px;
+		font-size: 1.7rem;
+	}
+
+	@include mediaL {
+		font-size: 17px;
+		font-size: 1.7rem;
+	}
+}
+
+p {
+	-ms-hyphens: none;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:link,
+a:visited:link {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, .3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $brandon-grotesque-font;
+	text-rendering: optimizelegibility;
 	color: $dark-gray;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	margin: 0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2 {
+	font-size: 30px;
+	font-size: 3rem;
+	line-height: 30px;
+	line-height: 3rem;
+	margin-bottom: 28px;
+	margin-bottom: 2.8rem;
+
+	@include mediaS {
+		font-size: 32px;
+		font-size: 3.2rem;
+		line-height: 32px;
+		line-height: 3.2rem;
+		margin-bottom: 30px;
+		letter-spacing: 1px;
+	}
+
+	@include mediaM {
+		font-size: 38px;
+		font-size: 3.8rem;
+		line-height: 38px;
+		line-height: 3.8rem;
+		margin-bottom: 40px;
+		margin-bottom: 4rem;
+	}
+
+	@include mediaL {
+		font-size: 42px;
+		font-size: 4.2rem;
+		line-height: 42px;
+		line-height: 4.2rem;
+		margin-bottom: 40px;
+		margin-bottom: 4rem;
+	}
+}
+
+h3 {
+	font-size: 1.125em;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: .846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+p {
+	-webkit-font-smoothing: antialiased;
+}
+
+hr {
+	outline: none;
+	border: none;
+	height: 1px;
+	width: 40px;
+	background-color: $light-gray-2;
+	float: left;
+	margin-top: 28px;
+	margin-top: 2.8rem;
+
+	@include mediaS {
+		width: 60px;
+		margin-top: 40px;
+		margin-top: 4rem;
+	}
 }
