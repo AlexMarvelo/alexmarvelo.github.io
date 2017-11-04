@@ -1,0 +1,66 @@
+@import '../../styles/imports';
+
+.button,
+.button:visited {
+	font-family: $brandon-grotesque-font;
+	font-weight: 600;
+	border: 1px solid $dark-gray;
+	background-color: transparent;
+	text-transform: uppercase;
+	padding: 17px 50px 18px;
+	padding: 1.7rem 5rem 1.8rem;
+	margin-top: 25px;
+	margin-top: 2.5rem;
+	color: $dark-gray;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	outline: none;
+
+	&:hover {
+		background-color: $dark-gray;
+		color: $white;
+		border-color: $white;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
+	@include mediaS {
+		padding: 17px 60px 18px;
+		margin-top: 25px;
+		margin-top: 2.5rem;
+		line-height: 1;
+		font-size: 12px;
+		font-size: 1.2rem;
+		transition:
+			color $transition-duration ease,
+			border-color $transition-duration ease,
+			background-color $transition-duration ease;
+	}
+
+	@include mediaM {
+		padding: 20px 74px 21px;
+		margin-top: 25px;
+		margin-top: 2.5rem;
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+
+	&.colorInvert {
+		border-color: $white;
+		color: $white;
+
+		&:hover {
+			background-color: $white;
+			color: $dark-gray;
+			border-color: $dark-gray;
+		}
+	}
+}

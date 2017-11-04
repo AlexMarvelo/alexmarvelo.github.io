@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import RectangleButton from 'components/RectangleButton';
 import styles from './DevSection.module.scss';
 
 
@@ -21,7 +22,9 @@ const DevSection = ({ openCvSection }) => (
 							<span className="font-weight-light">Front-end</span> <span className="font-weight-bold">dev</span>
 						</h2>
 						<p>{text}</p>
-						<button onClick={() => openCvSection()}>My CV</button>
+						<RectangleButton onClick={() => openCvSection()}>
+							<span className="font-weight-light">My</span> <span className="font-weight-bold">CV</span>
+						</RectangleButton>
 					</div>
 					<div className={classNames('col-sm', styles.photoContainer)}>
 						<img src="img/tag-sign.png" className={styles.photo} width="100%" alt="Coding" />
