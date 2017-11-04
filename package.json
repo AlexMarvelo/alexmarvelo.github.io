@@ -6,6 +6,7 @@
 	"dependencies": {
 		"gatsby": "^1.9.63",
 		"gatsby-link": "^1.6.21",
+		"gatsby-plugin-google-analytics": "^1.0.11",
 		"gatsby-plugin-react-helmet": "^1.0.5",
 		"gatsby-plugin-sass": "^1.0.12",
 		"normalize.css": "^7.0.0",
