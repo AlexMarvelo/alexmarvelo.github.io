@@ -1,0 +1,23 @@
+@mixin mediaXS() {
+	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin mediaS() {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mediaM {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin mediaL {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}

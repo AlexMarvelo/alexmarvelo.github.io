@@ -1,0 +1,30 @@
+@import '../../styles/imports';
+
+.section {
+	background-color: $light;
+	padding-bottom: 5rem;
+	position: relative;
+}
+
+.collapsedSection {
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 0;
+}
+
+.btnContainer {
+	display: flex;
+}
+
+.downloadButton {
+	position: relative;
+	min-width: 22rem;
+	margin: 4rem auto 0;
+
+	@include mediaS {
+		left: 8.5%;
+		width: 29%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

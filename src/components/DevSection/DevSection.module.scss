@@ -1,0 +1,28 @@
+@import '../../styles/imports';
+
+.photoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo {
+	max-width: 55%;
+}
+
+.btnContainer {
+	display: flex;
+}
+
+.cvButton {
+	position: relative;
+	min-width: 20rem;
+	margin: 4rem auto 0;
+
+	@include mediaS {
+		left: 8.5%;
+		width: 29%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

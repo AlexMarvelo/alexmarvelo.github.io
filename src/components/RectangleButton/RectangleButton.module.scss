@@ -1,0 +1,62 @@
+@import '../../styles/imports';
+
+.button,
+.button:visited {
+	font-family: $brandon-grotesque-font;
+	font-weight: 600;
+	border: .1rem solid $dark-gray;
+	background-color: transparent;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1.7rem 4rem 1.8rem;
+	margin-top: 2.5rem;
+	color: $dark-gray;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 1.5;
+	letter-spacing: .1rem;
+	font-size: 1.4rem;
+	outline: none;
+
+	&:hover {
+		background-color: $dark-gray;
+		color: $white;
+		border-color: $white;
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+
+	@include mediaS {
+		padding: 1.7rem 5rem 1.8rem;
+		margin-top: 2.5rem;
+		line-height: 1;
+		font-size: 1.2rem;
+		transition:
+			color $transition-duration ease,
+			border-color $transition-duration ease,
+			background-color $transition-duration ease;
+	}
+
+	@include mediaM {
+		padding: 2rem 6.4rem 2.1rem;
+		margin-top: 2.5rem;
+		font-size: 1.3rem;
+	}
+
+	&.colorInvert {
+		border-color: $white;
+		color: $white;
+
+		&:hover {
+			background-color: $white;
+			color: $dark-gray;
+			border-color: $dark-gray;
+		}
+	}
+}

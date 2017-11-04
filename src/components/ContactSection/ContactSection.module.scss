@@ -1,0 +1,29 @@
+@import "../../styles/imports";
+
+.contact {
+	padding-bottom: 3rem;
+	font-weight: 300;
+	color: $white;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding-left: 6rem !important;
+
+	a {
+		color: $white;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+
+		&:hover,
+		&:active {
+			color: $white;
+		}
+	}
+}
+
+.contactIcon {
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
+	font-size: 2.5rem;
+	line-height: 1;
+}

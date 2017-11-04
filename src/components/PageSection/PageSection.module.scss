@@ -1,3 +1,56 @@
+@import '../../styles/imports';
+
 .pageSection {
-	color: green;
+	min-height: 40rem;
+	padding: 1.5rem 0;
+	position: relative;
+
+	&.darkBg {
+		background-color: $dark-blue;
+		color: $white;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
+	}
+
+	&.whiteBg {
+		background-color: $white;
+	}
+
+	&.lightBg {
+		background-color: $light;
+	}
+
+	&.turquoiseBg {
+		background-color: $turquoise;
+		color: $white;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
+	}
+
+	&.fullHeight {
+		width: 100% !important;
+		height: 100% !important;
+		position: fixed;
+		z-index: $layout-level-top;
+	}
+
+	&.centerContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

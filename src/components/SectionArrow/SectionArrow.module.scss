@@ -1,0 +1,39 @@
+@import '../../styles/imports';
+
+.arrow {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	border-radius: 50%;
+	width: 6rem;
+	height: 6rem;
+	transform: translate(-50%, 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: $layout-level-bottom;
+
+	&::before {
+		font-size: 3rem;
+		margin-top: 2rem;
+	}
+}
+
+.darkBg {
+	background-color: $dark-blue;
+	color: $white;
+}
+
+.whiteBg {
+	background-color: $white;
+}
+
+.lightBg {
+	background-color: $light;
+}
+
+.turquoiseBg {
+	background-color: $turquoise;
+	color: $white;
+}
