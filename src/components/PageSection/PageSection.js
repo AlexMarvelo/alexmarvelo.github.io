@@ -6,12 +6,15 @@ import SectionArrow from 'components/SectionArrow';
 import styles from './PageSection.module.scss';
 
 
+const mobileThreshold = 768;
+
 class PageSection extends Component {
 	constructor(props) {
 		super(props);
 		this.setWinHeight = this.setWinHeight.bind(this);
 		this.isBrowser = typeof window !== 'undefined';
 		this.state = this.isBrowser ? {
+			winWidth: window.innerWidth,
 			winHeight: window.innerHeight,
 		} : {};
 		if (this.isBrowser) {
@@ -22,6 +25,7 @@ class PageSection extends Component {
 	setWinHeight() {
 		this.setState(state => ({
 			...state,
+			winWidth: window.innerWidth,
 			winHeight: window.innerHeight,
 		}));
 	}
@@ -30,10 +34,11 @@ class PageSection extends Component {
 		const {
 			children, background, showArrow, preload,
 		} = this.props;
-		const { winHeight } = this.state;
+		const { winWidth, winHeight } = this.state;
 		return (
 			<section
 				className={classNames(styles.pageSection, {
+					[styles.centerContent]: winWidth <= mobileThreshold,
 					[styles.fullHeight]: preload && !this.isBrowser,
 					[styles.darkBg]: background === PageSectionStyles.DARK,
 					[styles.lightBg]: background === PageSectionStyles.LIGHT,
@@ -41,7 +46,8 @@ class PageSection extends Component {
 					[styles.turquoiseBg]: background === PageSectionStyles.TURQUOISE,
 				})}
 				style={{
-					height: winHeight,
+					height: winWidth > mobileThreshold ? winHeight : 'auto',
+					minHeight: winHeight,
 				}}
 			>
 				{children}

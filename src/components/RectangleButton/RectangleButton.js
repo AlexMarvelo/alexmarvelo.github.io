@@ -5,17 +5,29 @@ import styles from './RectangleButton.module.scss';
 
 
 const RectangleButton = ({
-	children, onClick, colorInvert, className,
-}) => (
-	<button
-		className={classNames(styles.button, className, {
-			[styles.colorInvert]: colorInvert,
-		})}
-		onClick={onClick}
-	>
-		{children}
-	</button>
-);
+	children, onClick, colorInvert, className, href, download,
+}) => {
+	const classString = classNames(styles.button, className, {
+		[styles.colorInvert]: colorInvert,
+	});
+	return href ? (
+		<a
+			href={href}
+			className={classString}
+			onClick={onClick}
+			download={download}
+		>
+			{children}
+		</a>
+	) : (
+		<button
+			className={classString}
+			onClick={onClick}
+		>
+			{children}
+		</button>
+	);
+};
 
 const {
 	oneOfType, string, element, func, bool,
@@ -25,12 +37,16 @@ RectangleButton.propTypes = {
 	onClick: func,
 	colorInvert: bool,
 	className: string,
+	href: string,
+	download: bool,
 };
 
 RectangleButton.defaultProps = {
 	onClick: () => {},
 	colorInvert: false,
 	className: '',
+	href: null,
+	download: false,
 };
 
 export default RectangleButton;

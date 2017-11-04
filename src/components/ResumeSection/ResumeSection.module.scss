@@ -2,23 +2,29 @@
 
 .section {
 	background-color: $light;
-	margin-bottom: -6rem;
-	overflow: hidden;
+	padding-bottom: 5rem;
+	position: relative;
 }
 
 .collapsedSection {
+	overflow: hidden;
 	height: 0;
-	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-.doc {
-	// padding-bottom: 20rem;
+.downloadForm {
+	display: flex;
 }
 
 .downloadButton {
-	left: 8.5%;
 	position: relative;
-	width: 29%;
 	min-width: 22rem;
-	margin-bottom: 14rem;
+	margin: 4rem auto 0;
+
+	@include mediaS {
+		left: 8.5%;
+		width: 29%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }

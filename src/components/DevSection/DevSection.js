@@ -28,7 +28,7 @@ const DevSection = ({ openCvSection }) => (
 						<TagSignSVG className={styles.photo} />
 					</div>
 				</div>
-				<div>
+				<div className={styles.btnContainer}>
 					<RectangleButton onClick={() => openCvSection()} className={styles.cvButton}>
 						<span><span className="font-weight-light">My</span> <span className="font-weight-bold">CV</span></span>
 					</RectangleButton>

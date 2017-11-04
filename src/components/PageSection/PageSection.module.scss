@@ -2,6 +2,8 @@
 
 .pageSection {
 	min-height: 40rem;
+	padding: 1.5rem 0;
+	position: relative;
 
 	&.darkBg {
 		background-color: $dark-blue;
@@ -44,5 +46,11 @@
 		height: 100% !important;
 		position: fixed;
 		z-index: $layout-level-top;
+	}
+
+	&.centerContent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

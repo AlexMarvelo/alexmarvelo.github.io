@@ -16,9 +16,11 @@ const ResumeSection = ({ collapsed }) => (
 		<div className={classNames('container', styles.container)}>
 			<img src="CV.png" className={styles.doc} alt="My resume" width="100%" />
 			<div>
-				<RectangleButton className={styles.downloadButton}>
-					<span><span className="font-weight-light">Download</span> <span className="font-weight-bold">CV</span></span>
-				</RectangleButton>
+				<form method="get" action="/CV.png" className={styles.downloadForm}>
+					<RectangleButton className={styles.downloadButton} href="CV.png" download>
+						<span><span className="font-weight-light">Download</span> <span className="font-weight-bold">CV</span></span>
+					</RectangleButton>
+				</form>
 			</div>
 		</div>
 		<SectionArrow background={PageSectionStyles.LIGHT} />
