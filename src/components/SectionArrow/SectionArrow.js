@@ -7,7 +7,7 @@ import styles from './SectionArrow.module.scss';
 
 const SectionArrow = ({ background }) => (
 	<span
-		className={classNames('icon-arrow-bottom', styles.arrow, {
+		className={classNames('icon-keyboard_arrow_down', styles.arrow, {
 			[styles.darkBg]: background === PageSectionStyles.DARK,
 			[styles.lightBg]: background === PageSectionStyles.LIGHT,
 			[styles.whiteBg]: background === PageSectionStyles.WHITE,

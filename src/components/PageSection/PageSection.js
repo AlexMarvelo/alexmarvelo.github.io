@@ -9,11 +9,14 @@ import styles from './PageSection.module.scss';
 class PageSection extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			winHeight: window.innerHeight,
-		};
 		this.setWinHeight = this.setWinHeight.bind(this);
-		window.addEventListener('resize', this.setWinHeight);
+		const isBrowser = typeof window !== 'undefined';
+		this.state = isBrowser ? {
+			winHeight: window.innerHeight,
+		} : {};
+		if (isBrowser) {
+			window.addEventListener('resize', this.setWinHeight);
+		}
 	}
 
 	setWinHeight() {

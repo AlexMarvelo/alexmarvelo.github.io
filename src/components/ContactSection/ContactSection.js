@@ -28,12 +28,12 @@ const ContactSection = () => (
 					</div>
 					<div className={contactClassName}>
 						<a rel="nofollow" href="mailto:mironenkoalexey@gmail.com">
-							<span className={classNames('icon-mail', styles.contactIcon)} /> Email
+							<span className={classNames('icon-envelop', styles.contactIcon)} /> Email
 						</a>
 					</div>
 					<div className={contactClassName}>
 						<a href={Contacts.FB}>
-							<span className={classNames('icon-phone', styles.contactIcon)} /> Facebook
+							<span className={classNames('icon-facebook', styles.contactIcon)} /> Facebook
 						</a>
 					</div>
 					<div className={contactClassName}>
@@ -43,15 +43,15 @@ const ContactSection = () => (
 					</div>
 					<div className={contactClassName}>
 						<a rel="nofollow" href={Contacts.LINKED}>
-							<span className={classNames('icon-linkedin', styles.contactIcon)} /> LinkedIn
+							<span className={classNames('icon-linkedin2', styles.contactIcon)} /> LinkedIn
 						</a>
 					</div>
 					<div className={contactClassName}>
-						<span className={classNames('icon-phone', styles.contactIcon)} /> alexmironenko12
+						<span className={classNames('icon-skype', styles.contactIcon)} /> alexmironenko12
 					</div>
 					<div className={contactClassName}>
 						<a rel="nofollow" href={Contacts.GITHUB}>
-							<span className={classNames('icon-phone', styles.contactIcon)} /> GitHub
+							<span className={classNames('icon-github', styles.contactIcon)} /> GitHub
 						</a>
 					</div>
 					<div className={contactClassName}>
