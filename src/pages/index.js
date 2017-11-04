@@ -27,7 +27,7 @@ class IndexPage extends Component {
 	render() {
 		return (
 			<main>
-				<PageSection background={PageSectionStyles.DARK}>
+				<PageSection background={PageSectionStyles.DARK} preload>
 					<LogoSection name="Aleksey Mironenko" />
 				</PageSection>
 				<PageSection background={PageSectionStyles.WHITE}>

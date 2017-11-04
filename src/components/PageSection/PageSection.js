@@ -10,11 +10,11 @@ class PageSection extends Component {
 	constructor(props) {
 		super(props);
 		this.setWinHeight = this.setWinHeight.bind(this);
-		const isBrowser = typeof window !== 'undefined';
-		this.state = isBrowser ? {
+		this.isBrowser = typeof window !== 'undefined';
+		this.state = this.isBrowser ? {
 			winHeight: window.innerHeight,
 		} : {};
-		if (isBrowser) {
+		if (this.isBrowser) {
 			window.addEventListener('resize', this.setWinHeight);
 		}
 	}
@@ -27,11 +27,14 @@ class PageSection extends Component {
 	}
 
 	render() {
-		const { children, background, showArrow } = this.props;
+		const {
+			children, background, showArrow, preload,
+		} = this.props;
 		const { winHeight } = this.state;
 		return (
 			<section
 				className={classNames(styles.pageSection, {
+					[styles.fullHeight]: preload && !this.isBrowser,
 					[styles.darkBg]: background === PageSectionStyles.DARK,
 					[styles.lightBg]: background === PageSectionStyles.LIGHT,
 					[styles.whiteBg]: background === PageSectionStyles.WHITE,
@@ -50,16 +53,19 @@ class PageSection extends Component {
 	}
 }
 
+const { string, element, bool } = PropTypes;
 PageSection.propTypes = {
-	children: PropTypes.element,
-	background: PropTypes.string,
-	showArrow: PropTypes.bool,
+	children: element,
+	background: string,
+	showArrow: bool,
+	preload: bool,
 };
 
 PageSection.defaultProps = {
 	children: null,
 	background: PageSectionStyles.LIGHT,
 	showArrow: true,
+	preload: false,
 };
 
 export default PageSection;

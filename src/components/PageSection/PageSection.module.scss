@@ -38,4 +38,11 @@
 			color: $white;
 		}
 	}
+
+	&.fullHeight {
+		width: 100% !important;
+		height: 100% !important;
+		position: fixed;
+		z-index: $layout-level-top;
+	}
 }
