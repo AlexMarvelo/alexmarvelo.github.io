@@ -6,8 +6,8 @@ import TagSignSVG from 'components/TagSignSVG';
 import styles from './DevSection.module.scss';
 
 
-const text = `I prefer using technologies of the reactive stack,
-			believing in power of FRP. I have experience working
+const text = `I prefer using reactive stack technologies,
+			believing in the power of FRP. I have an experience working
 			as a freelancer, office job, and remote job.
 			Also, I find some time for contributing to the open source
 			to make the world a bit better. More info about my skills

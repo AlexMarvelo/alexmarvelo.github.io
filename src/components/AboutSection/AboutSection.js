@@ -6,7 +6,7 @@ import styles from './AboutSection.module.scss';
 const text = `My name is Aleksey Mironenko. I'm a self-educated front-end developer
 			living in Kiev, Ukraine. Fascinated by web technologies innovations.
 			I like EDM, traveling and working remotely. Studied system analysis and
-			project management in 2 universities. A big fan of minimalism`;
+			project management in two universities. A big fan of minimalism`;
 
 const AboutSection = () => (
 	<div className="container h-100">
