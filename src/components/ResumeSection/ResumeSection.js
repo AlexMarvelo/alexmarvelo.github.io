@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { PageSectionStyles } from 'constants/display';
 import SectionArrow from 'components/SectionArrow';
+import RectangleButton from 'components/RectangleButton';
 import styles from './ResumeSection.module.scss';
 
 
@@ -14,6 +15,11 @@ const ResumeSection = ({ collapsed }) => (
 	>
 		<div className={classNames('container', styles.container)}>
 			<img src="CV.png" className={styles.doc} alt="My resume" width="100%" />
+			<div>
+				<RectangleButton className={styles.downloadButton}>
+					<span><span className="font-weight-light">Download</span> <span className="font-weight-bold">CV</span></span>
+				</RectangleButton>
+			</div>
 		</div>
 		<SectionArrow background={PageSectionStyles.LIGHT} />
 	</section>

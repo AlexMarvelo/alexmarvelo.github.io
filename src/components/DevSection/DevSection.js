@@ -22,13 +22,15 @@ const DevSection = ({ openCvSection }) => (
 							<span className="font-weight-light">Front-end</span> <span className="font-weight-bold">dev</span>
 						</h2>
 						<p>{text}</p>
-						<RectangleButton onClick={() => openCvSection()}>
-							<span className="font-weight-light">My</span> <span className="font-weight-bold">CV</span>
-						</RectangleButton>
 					</div>
 					<div className={classNames('col-sm', styles.photoContainer)}>
 						<img src="img/tag-sign.png" className={styles.photo} width="100%" alt="Coding" />
 					</div>
+				</div>
+				<div>
+					<RectangleButton onClick={() => openCvSection()} className={styles.cvButton}>
+						<span><span className="font-weight-light">My</span> <span className="font-weight-bold">CV</span></span>
+					</RectangleButton>
 				</div>
 			</div>
 		</div>

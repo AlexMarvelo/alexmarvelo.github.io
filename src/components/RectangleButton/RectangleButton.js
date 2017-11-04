@@ -4,9 +4,11 @@ import classNames from 'classnames';
 import styles from './RectangleButton.module.scss';
 
 
-const RectangleButton = ({ children, onClick, colorInvert }) => (
+const RectangleButton = ({
+	children, onClick, colorInvert, className,
+}) => (
 	<button
-		className={classNames(styles.button, {
+		className={classNames(styles.button, className, {
 			[styles.colorInvert]: colorInvert,
 		})}
 		onClick={onClick}
@@ -22,11 +24,13 @@ RectangleButton.propTypes = {
 	children: oneOfType([string, element]).isRequired,
 	onClick: func,
 	colorInvert: bool,
+	className: string,
 };
 
 RectangleButton.defaultProps = {
 	onClick: () => {},
 	colorInvert: false,
+	className: '',
 };
 
 export default RectangleButton;

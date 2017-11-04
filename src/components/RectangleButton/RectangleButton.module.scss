@@ -4,19 +4,16 @@
 .button:visited {
 	font-family: $brandon-grotesque-font;
 	font-weight: 600;
-	border: 1px solid $dark-gray;
+	border: .1rem solid $dark-gray;
 	background-color: transparent;
 	text-transform: uppercase;
-	padding: 17px 50px 18px;
 	padding: 1.7rem 5rem 1.8rem;
-	margin-top: 25px;
 	margin-top: 2.5rem;
 	color: $dark-gray;
 	display: inline-block;
 	cursor: pointer;
 	line-height: 1.5;
-	letter-spacing: 1px;
-	font-size: 14px;
+	letter-spacing: .1rem;
 	font-size: 1.4rem;
 	outline: none;
 
@@ -33,11 +30,9 @@
 	}
 
 	@include mediaS {
-		padding: 17px 60px 18px;
-		margin-top: 25px;
+		padding: 1.7rem 6rem 1.8rem;
 		margin-top: 2.5rem;
 		line-height: 1;
-		font-size: 12px;
 		font-size: 1.2rem;
 		transition:
 			color $transition-duration ease,
@@ -46,10 +41,8 @@
 	}
 
 	@include mediaM {
-		padding: 20px 74px 21px;
-		margin-top: 25px;
+		padding: 2rem 7.4rem 2.1rem;
 		margin-top: 2.5rem;
-		font-size: 13px;
 		font-size: 1.3rem;
 	}
 
