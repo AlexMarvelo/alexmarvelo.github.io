@@ -1,13 +1,6 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Hello
+This is a project of [my personal site](https://alexmarvelo.surge.sh/)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+The site was build with [Gastby](https://www.gatsbyjs.org/) static site generator and [React](https://reactjs.org/). Deployed with [Surge](http://surge.sh/).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Hope you like it :blush:
