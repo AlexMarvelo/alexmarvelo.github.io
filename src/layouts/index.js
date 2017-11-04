@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'bootstrap/scss/bootstrap.scss';
-import '../styles/global.scss';
+import 'styles/global.scss';
 
 
 const fonts = `
@@ -50,8 +50,18 @@ const fonts = `
 const IndexLayout = ({ children }) => (
 	<div>
 		<Helmet>
-			<title>Aleksey Mironenko | Personal site</title>
-			<meta name="description" content="Sample" />
+			<html lang="en" />
+			<title>Aleksey Mironenko | Front-end developer</title>
+			<meta name="description" content="Aleksey Mironenko, Front-end developer. I create meaningful web apps." />
+			<link rel="author" href="Aleksey Mironenko" />
+			<meta name="application-name" content="Aleksey Mironenko" />
+			<link rel="icon" href="favicon.png" />
+			<link rel="image_src" href="img/preview.png" />
+			<meta name="geo.region" content="UA-30" />
+			<meta name="geo.placename" content="Kiev" />
+			<meta name="geo.position" content="50.5;30.5" />
+			<meta name="ICBM" content="50.5, 30.5" />
+			<meta name="google" content="notranslate" />
 			<style type="text/css">{fonts}</style>
 		</Helmet>
 		<div>
