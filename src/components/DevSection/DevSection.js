@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import RectangleButton from 'components/RectangleButton';
+import TagSignSVG from 'components/TagSignSVG';
 import styles from './DevSection.module.scss';
 
 
@@ -24,7 +25,7 @@ const DevSection = ({ openCvSection }) => (
 						<p>{text}</p>
 					</div>
 					<div className={classNames('col-sm', styles.photoContainer)}>
-						<img src="img/tag-sign.png" className={styles.photo} width="100%" alt="Coding" />
+						<TagSignSVG className={styles.photo} />
 					</div>
 				</div>
 				<div>
