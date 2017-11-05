@@ -13,6 +13,10 @@
 .btnContainer {
 	display: flex;
 	justify-content: center;
+
+	@include mediaS {
+		justify-content: left;
+	}
 }
 
 .cvButton {

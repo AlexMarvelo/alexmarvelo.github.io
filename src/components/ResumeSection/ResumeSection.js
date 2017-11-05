@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { PageSectionStyles } from 'constants/display';
+import { PageSectionStyles, CV_SRC, CV_DOWNLOAD_SRC } from 'constants/display';
 import SectionArrow from 'components/SectionArrow';
 import RectangleButton from 'components/RectangleButton';
 import styles from './ResumeSection.module.scss';
@@ -14,9 +14,9 @@ const ResumeSection = ({ collapsed }) => (
 		})}
 	>
 		<div className={classNames('container', styles.container)}>
-			<img src="CV.png" className={styles.doc} alt="My resume" width="100%" />
+			<img src={CV_SRC} className={styles.doc} alt="My resume" width="100%" />
 			<div className={styles.btnContainer}>
-				<RectangleButton className={styles.downloadButton} href="CV.png" download>
+				<RectangleButton className={styles.downloadButton} href={CV_DOWNLOAD_SRC} download>
 					<span><span className="font-weight-light">Download</span> <span className="font-weight-bold">CV</span></span>
 				</RectangleButton>
 			</div>

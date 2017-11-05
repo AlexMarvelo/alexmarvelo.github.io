@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { MYPHOTO_SRC } from 'constants/display';
 import styles from './AboutSection.module.scss';
 
 
@@ -14,7 +15,7 @@ const AboutSection = () => (
 			<div className="col">
 				<div className="row">
 					<div className="col-sm">
-						<img src="img/personal-photo.jpg" className={styles.photo} width="100%" alt="It's me!" />
+						<img src={MYPHOTO_SRC} className={styles.photo} width="100%" alt="It's me!" />
 					</div>
 					<div className={classNames('col-sm', styles.textCol)}>
 						<h2 className="text-uppercase">
