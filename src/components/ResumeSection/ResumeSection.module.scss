@@ -1,4 +1,4 @@
-@import '../../styles/imports';
+@import 'styles/imports';
 
 .section {
 	background-color: $light;
@@ -14,16 +14,21 @@
 
 .btnContainer {
 	display: flex;
+	justify-content: center;
+
+	@include mediaS {
+		justify-content: left;
+	}
 }
 
 .downloadButton {
 	position: relative;
 	min-width: 22rem;
-	margin: 4rem auto 0;
 
 	@include mediaS {
 		left: 8.5%;
 		width: 29%;
+		margin-top: 4rem;
 		margin-left: 0;
 		margin-right: 0;
 	}

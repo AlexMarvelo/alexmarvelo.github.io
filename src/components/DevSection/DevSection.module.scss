@@ -1,4 +1,4 @@
-@import '../../styles/imports';
+@import 'styles/imports';
 
 .photoContainer {
 	display: flex;
@@ -12,16 +12,21 @@
 
 .btnContainer {
 	display: flex;
+	justify-content: center;
+
+	@include mediaS {
+		justify-content: left;
+	}
 }
 
 .cvButton {
 	position: relative;
 	min-width: 20rem;
-	margin: 4rem auto 0;
 
 	@include mediaS {
 		left: 8.5%;
 		width: 29%;
+		margin-top: 4rem;
 		margin-left: 0;
 		margin-right: 0;
 	}
