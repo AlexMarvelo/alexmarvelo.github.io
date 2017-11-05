@@ -11,23 +11,11 @@ const mobileThreshold = 768;
 class PageSection extends Component {
 	constructor(props) {
 		super(props);
-		this.setWinHeight = this.setWinHeight.bind(this);
 		this.isBrowser = typeof window !== 'undefined';
 		this.state = this.isBrowser ? {
 			winWidth: window.innerWidth,
 			winHeight: window.innerHeight,
 		} : {};
-		if (this.isBrowser) {
-			window.addEventListener('resize', this.setWinHeight);
-		}
-	}
-
-	setWinHeight() {
-		this.setState(state => ({
-			...state,
-			winWidth: window.innerWidth,
-			winHeight: window.innerHeight,
-		}));
 	}
 
 	render() {
