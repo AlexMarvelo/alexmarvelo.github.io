@@ -11,7 +11,7 @@ const text = `I prefer using reactive stack technologies,
 			as a freelancer, office job, and remote job.
 			Also, I find some time for contributing to the open source
 			to make the world a bit better. More info about my skills
-			is listed in my CV.`;
+			is listed in my CV`;
 
 const DevSection = ({ openCvSection }) => (
 	<div className="container h-100">

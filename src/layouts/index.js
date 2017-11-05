@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { Host } from 'constants/deploy';
 import 'bootstrap/scss/bootstrap.scss';
 import 'styles/global.scss';
 
@@ -51,10 +52,12 @@ const IndexLayout = ({ children }) => (
 	<div>
 		<Helmet>
 			<html lang="en" />
-			<title>Aleksey Mironenko | Front-end developer</title>
-			<meta name="description" content="Aleksey Mironenko, Front-end developer. I create meaningful web apps." />
-			<link rel="author" href="Aleksey Mironenko" />
-			<meta name="application-name" content="Aleksey Mironenko" />
+			<title>Aleksey Mironenko - Front-end developer</title>
+			<meta name="description" content="It's my personal site. I build powerfull and meaningful web applications" />
+			<meta name="keywords" content="web,developer,html,css,js,react,personal site,resume,cv,hr,recruting,front-end" />
+			<meta name="author" content="Aleksey Mironenko" />
+			<link rel="author" href="https://www.facebook.com/alx.mironenko" />
+			<meta name="application-name" content="aleksey-mironenko" />
 			<link rel="icon" href="favicon.png" />
 			<link rel="image_src" href="img/preview.png" />
 			<meta name="geo.region" content="UA-30" />
@@ -63,6 +66,19 @@ const IndexLayout = ({ children }) => (
 			<meta name="ICBM" content="50.5, 30.5" />
 			<meta name="google" content="notranslate" />
 			<style type="text/css">{fonts}</style>
+
+			<meta property="fb:admins" content="100001247398038" />
+			<meta property="fb:app_id" content="1906766622973917" />
+			<meta property="og:locale" content="en_US" />
+			<meta property="og:title" content="Aleksey Mironenko - Front-end developer" />
+			<meta property="og:description" content="I build powerfull and meaningful web applications" />
+			<meta property="og:url" content={Host.SECURE} />
+			<meta property="og:site_name" content="aleksey-mironenko" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image" content={`${Host.NORMAL}/img/preview.png`} />
+			<meta property="og:image:secure_url" content={`${Host.SECURE}/img/preview.png`} />
+			<meta property="og:image:type" content="image/png" />
+			<meta property="og:image:alt" content="Screenshot of the website's header" />
 		</Helmet>
 		<div>
 			{children()}
