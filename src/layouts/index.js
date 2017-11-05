@@ -79,6 +79,14 @@ const IndexLayout = ({ children }) => (
 			<meta property="og:image:secure_url" content={`${Host.SECURE}/img/preview.png`} />
 			<meta property="og:image:type" content="image/png" />
 			<meta property="og:image:alt" content="Screenshot of the website's header" />
+
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:site" content="@AlexeyMironenko" />
+			<meta name="twitter:creator" content="@AlexeyMironenko" />
+			<meta name="twitter:title" content="Aleksey Mironenko - Front-end developer" />
+			<meta name="twitter:description" content="I build powerfull and meaningful web applications" />
+			<meta name="twitter:domain" content={Host.SECURE} />
+			<meta name="twitter:image:src" content={`${Host.SECURE}/img/preview.png`} />
 		</Helmet>
 		<div>
 			{children()}
