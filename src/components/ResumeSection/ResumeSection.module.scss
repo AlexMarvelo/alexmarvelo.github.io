@@ -12,6 +12,14 @@
 	padding-bottom: 0;
 }
 
+.doc {
+	@include mediaS {
+		width: 83%;
+		margin-left: 8.5%;
+		margin-right: 8.5%;
+	}
+}
+
 .btnContainer {
 	display: flex;
 	justify-content: center;
@@ -27,7 +35,7 @@
 
 	@include mediaS {
 		left: 8.5%;
-		width: 29%;
+		width: 27%;
 		margin-top: 4rem;
 		margin-left: 0;
 		margin-right: 0;
