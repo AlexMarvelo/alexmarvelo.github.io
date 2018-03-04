@@ -4,10 +4,10 @@
 	"version": "1.0.0",
 	"author": "Aleksey Myronenko",
 	"dependencies": {
-		"gatsby": "^1.9.63",
-		"gatsby-link": "^1.6.21",
+		"gatsby": "^1.9.223",
+		"gatsby-link": "^1.6.38",
 		"gatsby-plugin-google-analytics": "^1.0.11",
-		"gatsby-plugin-react-helmet": "^1.0.5",
+		"gatsby-plugin-react-helmet": "^1.0.8",
 		"gatsby-plugin-sass": "^1.0.12",
 		"loader-utils": "^1.1.0",
 		"normalize.css": "^7.0.0",
@@ -21,8 +21,9 @@
 	"license": "MIT",
 	"main": "n/a",
 	"scripts": {
+		"dev": "gatsby develop",
 		"build": "gatsby build",
-		"develop": "gatsby develop",
+		"serve": "http-server public/ -p 8000",
 		"eslint": "eslint ./src",
 		"stylelint": "stylelint 'src/**/*.scss' --syntax scss",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
@@ -30,13 +31,14 @@
 		"deploy": "gatsby build && surge ./public https://alexmarvelo.surge.sh"
 	},
 	"devDependencies": {
-		"bootstrap": "^4.0.0-beta.2",
+		"bootstrap": "^4.0.0",
 		"classnames": "^2.2.5",
 		"eslint": "^4.9.0",
 		"eslint-config-airbnb": "^16.1.0",
 		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-jsx-a11y": "^6.0.2",
 		"eslint-plugin-react": "^7.4.0",
+		"http-server": "^0.11.1",
 		"prettier": "^1.7.4"
 	}
 }
