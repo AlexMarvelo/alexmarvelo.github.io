@@ -7,7 +7,7 @@ const Contacts = {
 	FB: 'https://www.facebook.com/alx.mironenko',
 	INST: 'https://www.instagram.com/alekseymironenko_',
 	LINKED: 'https://www.linkedin.com/in/alekseymironenko',
-	GITHUB: 'https://github.com/AlexMarvelo',
+	GITHUB: 'https://github.com/alxmiron',
 	TWITTER: 'https://twitter.com/AlexeyMironenko',
 };
 

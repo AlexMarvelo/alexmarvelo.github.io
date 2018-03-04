@@ -5,7 +5,7 @@ export const PageSectionStyles = {
 	TURQUOISE: 'TURQUOISE',
 };
 
-export const CV_SRC = 'CV-croped.png';
+export const CV_SRC = 'CV-cropped.png';
 
 export const CV_DOWNLOAD_SRC = 'CV.png';
 
