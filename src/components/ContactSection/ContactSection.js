@@ -21,26 +21,26 @@ const ContactSection = () => (
 					<span className="font-weight-light">Get</span> <span className="font-weight-bold">connected</span>
 				</h2>
 				<div className={classNames('row', styles.contacts)}>
-					<div className={contactClassName}>
+					{/* <div className={contactClassName}>
 						<a rel="nofollow" href="tel:+380996423129">
 							<span className={classNames('icon-phone', styles.contactIcon)} /> +38 099 642 3129
 						</a>
-					</div>
+					</div> */}
 					<div className={contactClassName}>
 						<a rel="nofollow" href="mailto:mironenkoalexey@gmail.com">
 							<span className={classNames('icon-envelop', styles.contactIcon)} /> Email
 						</a>
 					</div>
-					<div className={contactClassName}>
+					{/* <div className={contactClassName}>
 						<a href={Contacts.FB}>
 							<span className={classNames('icon-facebook', styles.contactIcon)} /> Facebook
 						</a>
-					</div>
-					<div className={contactClassName}>
+					</div> */}
+					{/* <div className={contactClassName}>
 						<a rel="nofollow" href={Contacts.INST}>
 							<span className={classNames('icon-instagram', styles.contactIcon)} /> Instagram
 						</a>
-					</div>
+					</div> */}
 					<div className={contactClassName}>
 						<a rel="nofollow" href={Contacts.LINKED}>
 							<span className={classNames('icon-linkedin2', styles.contactIcon)} /> LinkedIn
@@ -54,11 +54,11 @@ const ContactSection = () => (
 							<span className={classNames('icon-github', styles.contactIcon)} /> GitHub
 						</a>
 					</div>
-					<div className={contactClassName}>
+					{/* <div className={contactClassName}>
 						<a rel="nofollow" href={Contacts.TWITTER}>
 							<span className={classNames('icon-twitter', styles.contactIcon)} /> Twitter
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
